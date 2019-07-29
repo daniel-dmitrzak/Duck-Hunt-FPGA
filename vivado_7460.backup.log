@@ -1,0 +1,281 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Tue Jun 20 15:57:01 2017
+# Process ID: 7460
+# Current directory: C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/Duck_Hunt
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7952 C:\Users\Kiteu\OneDrive\UEC\Duck Hunt\Duck_Hunt\Duck_Hunt.xpr
+# Log file: C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/Duck_Hunt/vivado.log
+# Journal file: C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/Duck_Hunt\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/Duck_Hunt/Duck_Hunt.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2016.2/data/ip'.
+WARNING: [IP_Flow 19-3664] IP 'clk_wiz_0' generated file not found 'c:/Users/Kiteu/OneDrive/UEC/Duck Hunt/Duck_Hunt/Duck_Hunt.srcs/sources_1/ip/clk_wiz_0/doc/clk_wiz_v5_3_changelog.txt'. Please regenerate to continue.
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:10 . Memory (MB): peak = 817.484 ; gain = 161.363
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/Duck_Hunt/Duck_Hunt.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci}}]
+INFO: [Vivado 12-3453] The given sub-design is up-to-date, no action was taken.  If a run is still desired, use the '-force' option for the file:'C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/Duck_Hunt/Duck_Hunt.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci'
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: vga_example
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:54 ; elapsed = 00:02:41 . Memory (MB): peak = 842.090 ; gain = 635.371
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'vga_example' [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/Duck_Hunt/Duck_Hunt.srcs/sources_1/imports/sources_1/imports/MTM_UEC_lab2_1_ee178_spring2017_lab4/vga_example.v:13]
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "TRUE" *) [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/Duck_Hunt/Duck_Hunt.srcs/sources_1/imports/sources_1/imports/MTM_UEC_lab2_1_ee178_spring2017_lab4/vga_example.v:37]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/Duck_Hunt/Duck_Hunt.srcs/sources_1/imports/sources_1/imports/MTM_UEC_lab2_1_ee178_spring2017_lab4/vga_example.v:37]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/Duck_Hunt/.Xil/Vivado-7460-RAICHU/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0' (1#1) [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/Duck_Hunt/.Xil/Vivado-7460-RAICHU/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-638] synthesizing module 'debounce' [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/Duck_Hunt/Duck_Hunt.srcs/sources_1/imports/UART/list_ch06_02_debounce.v:2]
+	Parameter zero bound to: 2'b00 
+	Parameter wait0 bound to: 2'b01 
+	Parameter one bound to: 2'b10 
+	Parameter wait1 bound to: 2'b11 
+	Parameter N bound to: 21 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/Duck_Hunt/Duck_Hunt.srcs/sources_1/imports/UART/list_ch06_02_debounce.v:43]
+INFO: [Synth 8-256] done synthesizing module 'debounce' (2#1) [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/Duck_Hunt/Duck_Hunt.srcs/sources_1/imports/UART/list_ch06_02_debounce.v:2]
+INFO: [Synth 8-638] synthesizing module 'vga_timing' [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/Duck_Hunt/Duck_Hunt.srcs/sources_1/imports/sources_1/imports/MTM_UEC_lab2_1_ee178_spring2017_lab4/vga_timing.v:14]
+INFO: [Synth 8-256] done synthesizing module 'vga_timing' (3#1) [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/Duck_Hunt/Duck_Hunt.srcs/sources_1/imports/sources_1/imports/MTM_UEC_lab2_1_ee178_spring2017_lab4/vga_timing.v:14]
+INFO: [Synth 8-638] synthesizing module 'draw_background' [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/Duck_Hunt/Duck_Hunt.srcs/sources_1/imports/sources_1/new/draw_background.v:23]
+INFO: [Synth 8-256] done synthesizing module 'draw_background' (4#1) [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/Duck_Hunt/Duck_Hunt.srcs/sources_1/imports/sources_1/new/draw_background.v:23]
+INFO: [Synth 8-638] synthesizing module 'duck_cnc' [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/Duck_Hunt/Duck_Hunt.srcs/sources_1/new/duck_cnc.v:25]
+INFO: [Synth 8-638] synthesizing module 'sync_gen' [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/Duck_Hunt/Duck_Hunt.srcs/sources_1/new/sync_gen.v:24]
+	Parameter START bound to: 601 - type: integer 
+	Parameter END bound to: 605 - type: integer 
+	Parameter WIDTH bound to: 11 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'sync_gen' (5#1) [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/Duck_Hunt/Duck_Hunt.srcs/sources_1/new/sync_gen.v:24]
+INFO: [Synth 8-638] synthesizing module 'frame_clock' [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/Duck_Hunt/Duck_Hunt.srcs/sources_1/new/anim_clock_gen.v:6]
+INFO: [Synth 8-256] done synthesizing module 'frame_clock' (6#1) [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/Duck_Hunt/Duck_Hunt.srcs/sources_1/new/anim_clock_gen.v:6]
+INFO: [Synth 8-638] synthesizing module 'duck_ctl' [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/Duck_Hunt/Duck_Hunt.srcs/sources_1/new/duck_ctl.v:7]
+	Parameter DIR_UP bound to: 3'b000 
+	Parameter DIR_RUP bound to: 3'b001 
+	Parameter DIR_LUP bound to: 3'b010 
+	Parameter DIR_RIGHT bound to: 3'b011 
+	Parameter DIR_LEFT bound to: 3'b100 
+	Parameter SHOT bound to: 3'b101 
+	Parameter FALLING bound to: 3'b110 
+	Parameter VER_SPEED bound to: 10 - type: integer 
+	Parameter HOR_SPEED bound to: 20 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'lfsr_updown' [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/Duck_Hunt/Duck_Hunt.srcs/sources_1/new/rng.v:5]
+	Parameter BITS bound to: 3 - type: integer 
+	Parameter MIN bound to: 0 - type: integer 
+	Parameter MAX bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'lfsr_updown' (7#1) [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/Duck_Hunt/Duck_Hunt.srcs/sources_1/new/rng.v:5]
+INFO: [Synth 8-256] done synthesizing module 'duck_ctl' (8#1) [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/Duck_Hunt/Duck_Hunt.srcs/sources_1/new/duck_ctl.v:7]
+INFO: [Synth 8-638] synthesizing module 'draw_sprite' [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/Duck_Hunt/Duck_Hunt.srcs/sources_1/imports/new/draw_sprite.v:24]
+	Parameter WIDTH bound to: 64 - type: integer 
+	Parameter HEIGHT bound to: 64 - type: integer 
+	Parameter ALPHA bound to: 12'b000000001001 
+	Parameter TRANSPARENCY bound to: 1 - type: integer 
+	Parameter SCALE_X bound to: 2 - type: integer 
+	Parameter SCALE_Y bound to: 2 - type: integer 
+	Parameter FILE bound to: sprites_128x128.jpg.data - type: string 
+	Parameter ADDR_WIDTH_X bound to: 7 - type: integer 
+	Parameter ADDR_WIDTH_Y bound to: 7 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'draw_rect' [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/Duck_Hunt/Duck_Hunt.srcs/sources_1/imports/sources_1/new/draw_rect.v:25]
+	Parameter WIDTH bound to: 64 - type: integer 
+	Parameter HEIGHT bound to: 64 - type: integer 
+	Parameter ALPHA bound to: 12'b000000001001 
+	Parameter TRANSPARENCY bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH_X bound to: 5 - type: integer 
+	Parameter ADDR_WIDTH_Y bound to: 5 - type: integer 
+	Parameter SCALE_X bound to: 2 - type: integer 
+	Parameter SCALE_Y bound to: 2 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'delayup' [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/Duck_Hunt/Duck_Hunt.srcs/sources_1/imports/sources_1/imports/Downloads/delay_upel.v:3]
+	Parameter WIDTH bound to: 35 - type: integer 
+	Parameter CLK_DEL bound to: 3 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'delayup' (9#1) [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/Duck_Hunt/Duck_Hunt.srcs/sources_1/imports/sources_1/imports/Downloads/delay_upel.v:3]
+INFO: [Synth 8-256] done synthesizing module 'draw_rect' (10#1) [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/Duck_Hunt/Duck_Hunt.srcs/sources_1/imports/sources_1/new/draw_rect.v:25]
+INFO: [Synth 8-638] synthesizing module 'image_rom' [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/Duck_Hunt/Duck_Hunt.srcs/sources_1/imports/sources_1/imports/OneDrive-2017-04-11/image_rom.v:7]
+	Parameter FILE bound to: sprites_128x128.jpg.data - type: string 
+	Parameter SIZEX bound to: 128 - type: integer 
+	Parameter SIZEY bound to: 128 - type: integer 
+	Parameter ADDR_WIDTH_X bound to: 7 - type: integer 
+	Parameter ADDR_WIDTH_Y bound to: 7 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'sprites_128x128.jpg.data' is read successfully [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/Duck_Hunt/Duck_Hunt.srcs/sources_1/imports/sources_1/imports/OneDrive-2017-04-11/image_rom.v:24]
+INFO: [Synth 8-256] done synthesizing module 'image_rom' (11#1) [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/Duck_Hunt/Duck_Hunt.srcs/sources_1/imports/sources_1/imports/OneDrive-2017-04-11/image_rom.v:7]
+INFO: [Synth 8-256] done synthesizing module 'draw_sprite' (12#1) [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/Duck_Hunt/Duck_Hunt.srcs/sources_1/imports/new/draw_sprite.v:24]
+INFO: [Synth 8-256] done synthesizing module 'duck_cnc' (13#1) [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/Duck_Hunt/Duck_Hunt.srcs/sources_1/new/duck_cnc.v:25]
+INFO: [Synth 8-638] synthesizing module 'draw_image' [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/Duck_Hunt/Duck_Hunt.srcs/sources_1/imports/sources_1/new/draw_image.v:4]
+	Parameter WIDTH bound to: 256 - type: integer 
+	Parameter HEIGHT bound to: 256 - type: integer 
+	Parameter ALPHA bound to: 12'b000000001001 
+	Parameter TRANSPARENCY bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH_X bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH_Y bound to: 8 - type: integer 
+	Parameter SCALE_X bound to: 1 - type: integer 
+	Parameter SCALE_Y bound to: 1 - type: integer 
+	Parameter XPOS bound to: 50 - type: integer 
+	Parameter YPOS bound to: 160 - type: integer 
+	Parameter FILE bound to: tree_256x256.jpg.data - type: string 
+	Parameter FILE_X bound to: 256 - type: integer 
+	Parameter FILE_Y bound to: 256 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'draw_rect__parameterized0' [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/Duck_Hunt/Duck_Hunt.srcs/sources_1/imports/sources_1/new/draw_rect.v:25]
+	Parameter WIDTH bound to: 256 - type: integer 
+	Parameter HEIGHT bound to: 256 - type: integer 
+	Parameter ALPHA bound to: 12'b000000001001 
+	Parameter TRANSPARENCY bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH_X bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH_Y bound to: 8 - type: integer 
+	Parameter SCALE_X bound to: 1 - type: integer 
+	Parameter SCALE_Y bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'draw_rect__parameterized0' (13#1) [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/Duck_Hunt/Duck_Hunt.srcs/sources_1/imports/sources_1/new/draw_rect.v:25]
+INFO: [Synth 8-638] synthesizing module 'image_rom__parameterized0' [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/Duck_Hunt/Duck_Hunt.srcs/sources_1/imports/sources_1/imports/OneDrive-2017-04-11/image_rom.v:7]
+	Parameter FILE bound to: tree_256x256.jpg.data - type: string 
+	Parameter SIZEX bound to: 256 - type: integer 
+	Parameter SIZEY bound to: 256 - type: integer 
+	Parameter ADDR_WIDTH_X bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH_Y bound to: 8 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'tree_256x256.jpg.data' is read successfully [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/Duck_Hunt/Duck_Hunt.srcs/sources_1/imports/sources_1/imports/OneDrive-2017-04-11/image_rom.v:24]
+INFO: [Synth 8-256] done synthesizing module 'image_rom__parameterized0' (13#1) [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/Duck_Hunt/Duck_Hunt.srcs/sources_1/imports/sources_1/imports/OneDrive-2017-04-11/image_rom.v:7]
+INFO: [Synth 8-256] done synthesizing module 'draw_image' (14#1) [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/Duck_Hunt/Duck_Hunt.srcs/sources_1/imports/sources_1/new/draw_image.v:4]
+INFO: [Synth 8-638] synthesizing module 'draw_image__parameterized0' [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/Duck_Hunt/Duck_Hunt.srcs/sources_1/imports/sources_1/new/draw_image.v:4]
+	Parameter WIDTH bound to: 128 - type: integer 
+	Parameter HEIGHT bound to: 128 - type: integer 
+	Parameter ALPHA bound to: 12'b000000001001 
+	Parameter TRANSPARENCY bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH_X bound to: 7 - type: integer 
+	Parameter ADDR_WIDTH_Y bound to: 7 - type: integer 
+	Parameter SCALE_X bound to: 1 - type: integer 
+	Parameter SCALE_Y bound to: 1 - type: integer 
+	Parameter XPOS bound to: 670 - type: integer 
+	Parameter YPOS bound to: 300 - type: integer 
+	Parameter FILE bound to: bush_128x128.jpg.data - type: string 
+	Parameter FILE_X bound to: 128 - type: integer 
+	Parameter FILE_Y bound to: 128 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'draw_rect__parameterized1' [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/Duck_Hunt/Duck_Hunt.srcs/sources_1/imports/sources_1/new/draw_rect.v:25]
+	Parameter WIDTH bound to: 128 - type: integer 
+	Parameter HEIGHT bound to: 128 - type: integer 
+	Parameter ALPHA bound to: 12'b000000001001 
+	Parameter TRANSPARENCY bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH_X bound to: 7 - type: integer 
+	Parameter ADDR_WIDTH_Y bound to: 7 - type: integer 
+	Parameter SCALE_X bound to: 1 - type: integer 
+	Parameter SCALE_Y bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'draw_rect__parameterized1' (14#1) [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/Duck_Hunt/Duck_Hunt.srcs/sources_1/imports/sources_1/new/draw_rect.v:25]
+INFO: [Synth 8-638] synthesizing module 'image_rom__parameterized1' [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/Duck_Hunt/Duck_Hunt.srcs/sources_1/imports/sources_1/imports/OneDrive-2017-04-11/image_rom.v:7]
+	Parameter FILE bound to: bush_128x128.jpg.data - type: string 
+	Parameter SIZEX bound to: 128 - type: integer 
+	Parameter SIZEY bound to: 128 - type: integer 
+	Parameter ADDR_WIDTH_X bound to: 7 - type: integer 
+	Parameter ADDR_WIDTH_Y bound to: 7 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'bush_128x128.jpg.data' is read successfully [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/Duck_Hunt/Duck_Hunt.srcs/sources_1/imports/sources_1/imports/OneDrive-2017-04-11/image_rom.v:24]
+INFO: [Synth 8-256] done synthesizing module 'image_rom__parameterized1' (14#1) [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/Duck_Hunt/Duck_Hunt.srcs/sources_1/imports/sources_1/imports/OneDrive-2017-04-11/image_rom.v:7]
+INFO: [Synth 8-256] done synthesizing module 'draw_image__parameterized0' (14#1) [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/Duck_Hunt/Duck_Hunt.srcs/sources_1/imports/sources_1/new/draw_image.v:4]
+INFO: [Synth 8-638] synthesizing module 'draw_image__parameterized1' [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/Duck_Hunt/Duck_Hunt.srcs/sources_1/imports/sources_1/new/draw_image.v:4]
+	Parameter WIDTH bound to: 800 - type: integer 
+	Parameter HEIGHT bound to: 256 - type: integer 
+	Parameter ALPHA bound to: 12'b000000001001 
+	Parameter TRANSPARENCY bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH_X bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH_Y bound to: 7 - type: integer 
+	Parameter SCALE_X bound to: 2 - type: integer 
+	Parameter SCALE_Y bound to: 2 - type: integer 
+	Parameter XPOS bound to: 0 - type: integer 
+	Parameter YPOS bound to: 400 - type: integer 
+	Parameter FILE bound to: foreground_256x128.jpg.data - type: string 
+	Parameter FILE_X bound to: 256 - type: integer 
+	Parameter FILE_Y bound to: 128 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'draw_rect__parameterized2' [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/Duck_Hunt/Duck_Hunt.srcs/sources_1/imports/sources_1/new/draw_rect.v:25]
+	Parameter WIDTH bound to: 800 - type: integer 
+	Parameter HEIGHT bound to: 256 - type: integer 
+	Parameter ALPHA bound to: 12'b000000001001 
+	Parameter TRANSPARENCY bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH_X bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH_Y bound to: 7 - type: integer 
+	Parameter SCALE_X bound to: 2 - type: integer 
+	Parameter SCALE_Y bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'draw_rect__parameterized2' (14#1) [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/Duck_Hunt/Duck_Hunt.srcs/sources_1/imports/sources_1/new/draw_rect.v:25]
+INFO: [Synth 8-638] synthesizing module 'image_rom__parameterized2' [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/Duck_Hunt/Duck_Hunt.srcs/sources_1/imports/sources_1/imports/OneDrive-2017-04-11/image_rom.v:7]
+	Parameter FILE bound to: foreground_256x128.jpg.data - type: string 
+	Parameter SIZEX bound to: 256 - type: integer 
+	Parameter SIZEY bound to: 128 - type: integer 
+	Parameter ADDR_WIDTH_X bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH_Y bound to: 7 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'foreground_256x128.jpg.data' is read successfully [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/Duck_Hunt/Duck_Hunt.srcs/sources_1/imports/sources_1/imports/OneDrive-2017-04-11/image_rom.v:24]
+INFO: [Synth 8-256] done synthesizing module 'image_rom__parameterized2' (14#1) [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/Duck_Hunt/Duck_Hunt.srcs/sources_1/imports/sources_1/imports/OneDrive-2017-04-11/image_rom.v:7]
+INFO: [Synth 8-256] done synthesizing module 'draw_image__parameterized1' (14#1) [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/Duck_Hunt/Duck_Hunt.srcs/sources_1/imports/sources_1/new/draw_image.v:4]
+INFO: [Synth 8-638] synthesizing module 'blanker' [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/Duck_Hunt/Duck_Hunt.srcs/sources_1/new/blanker.v:27]
+	Parameter BOX_WIDTH bound to: 64 - type: integer 
+	Parameter BOX_HEIGHT bound to: 64 - type: integer 
+	Parameter IDLE bound to: 2'b00 
+	Parameter WAIT bound to: 2'b01 
+	Parameter BLANK bound to: 2'b10 
+	Parameter READ bound to: 2'b11 
+INFO: [Synth 8-226] default block is never used [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/Duck_Hunt/Duck_Hunt.srcs/sources_1/new/blanker.v:97]
+INFO: [Synth 8-256] done synthesizing module 'blanker' (15#1) [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/Duck_Hunt/Duck_Hunt.srcs/sources_1/new/blanker.v:27]
+INFO: [Synth 8-638] synthesizing module 'sync_and_blank' [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/Duck_Hunt/Duck_Hunt.srcs/sources_1/new/sync_and_blank.v:24]
+INFO: [Synth 8-638] synthesizing module 'sync_gen__parameterized0' [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/Duck_Hunt/Duck_Hunt.srcs/sources_1/new/sync_gen.v:24]
+	Parameter START bound to: 840 - type: integer 
+	Parameter END bound to: 968 - type: integer 
+	Parameter WIDTH bound to: 11 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'sync_gen__parameterized0' (15#1) [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/Duck_Hunt/Duck_Hunt.srcs/sources_1/new/sync_gen.v:24]
+INFO: [Synth 8-638] synthesizing module 'sync_gen__parameterized1' [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/Duck_Hunt/Duck_Hunt.srcs/sources_1/new/sync_gen.v:24]
+	Parameter START bound to: 600 - type: integer 
+	Parameter END bound to: 627 - type: integer 
+	Parameter WIDTH bound to: 11 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'sync_gen__parameterized1' (15#1) [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/Duck_Hunt/Duck_Hunt.srcs/sources_1/new/sync_gen.v:24]
+INFO: [Synth 8-638] synthesizing module 'sync_gen__parameterized2' [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/Duck_Hunt/Duck_Hunt.srcs/sources_1/new/sync_gen.v:24]
+	Parameter START bound to: 800 - type: integer 
+	Parameter END bound to: 1055 - type: integer 
+	Parameter WIDTH bound to: 11 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'sync_gen__parameterized2' (15#1) [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/Duck_Hunt/Duck_Hunt.srcs/sources_1/new/sync_gen.v:24]
+INFO: [Synth 8-256] done synthesizing module 'sync_and_blank' (16#1) [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/Duck_Hunt/Duck_Hunt.srcs/sources_1/new/sync_and_blank.v:24]
+INFO: [Synth 8-256] done synthesizing module 'vga_example' (17#1) [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/Duck_Hunt/Duck_Hunt.srcs/sources_1/imports/sources_1/imports/MTM_UEC_lab2_1_ee178_spring2017_lab4/vga_example.v:13]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:56 ; elapsed = 00:02:44 . Memory (MB): peak = 956.176 ; gain = 749.457
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:57 ; elapsed = 00:02:45 . Memory (MB): peak = 956.176 ; gain = 749.457
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Kiteu/OneDrive/UEC/Duck Hunt/Duck_Hunt/Duck_Hunt.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp' for cell 'my_clk_ctrl'
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.2
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 1 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/Kiteu/OneDrive/UEC/Duck Hunt/Duck_Hunt/Duck_Hunt.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'my_clk_ctrl/inst'
+Finished Parsing XDC File [c:/Users/Kiteu/OneDrive/UEC/Duck Hunt/Duck_Hunt/Duck_Hunt.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'my_clk_ctrl/inst'
+Parsing XDC File [c:/Users/Kiteu/OneDrive/UEC/Duck Hunt/Duck_Hunt/Duck_Hunt.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'my_clk_ctrl/inst'
+Finished Parsing XDC File [c:/Users/Kiteu/OneDrive/UEC/Duck Hunt/Duck_Hunt/Duck_Hunt.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'my_clk_ctrl/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/Kiteu/OneDrive/UEC/Duck Hunt/Duck_Hunt/Duck_Hunt.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/vga_example_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/vga_example_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/Duck_Hunt/Duck_Hunt.srcs/constrs_1/imports/MTM_UEC_lab2_1_ee178_spring2017_lab4/vga_example.xdc]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Terminal JXADC[7] cannot be placed on N1 (IOB_X1Y79) because the pad is already occupied by terminal led[13] possibly due to user constraint [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/Duck_Hunt/Duck_Hunt.srcs/constrs_1/imports/MTM_UEC_lab2_1_ee178_spring2017_lab4/vga_example.xdc:145]
+Finished Parsing XDC File [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/Duck_Hunt/Duck_Hunt.srcs/constrs_1/imports/MTM_UEC_lab2_1_ee178_spring2017_lab4/vga_example.xdc]
+Parsing XDC File [c:/Users/Kiteu/OneDrive/UEC/Duck Hunt/Duck_Hunt/Duck_Hunt.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_late.xdc] for cell 'my_clk_ctrl/inst'
+Finished Parsing XDC File [c:/Users/Kiteu/OneDrive/UEC/Duck Hunt/Duck_Hunt/Duck_Hunt.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_late.xdc] for cell 'my_clk_ctrl/inst'
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:01:15 ; elapsed = 00:03:10 . Memory (MB): peak = 1245.836 ; gain = 1039.117
+76 Infos, 0 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:35 . Memory (MB): peak = 1245.836 ; gain = 425.668
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Jun 20 16:00:50 2017...

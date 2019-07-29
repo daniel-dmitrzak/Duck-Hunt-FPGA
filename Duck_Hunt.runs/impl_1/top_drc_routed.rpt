@@ -1,0 +1,46 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
+| Date         : Sun Jul 02 21:58:22 2017
+| Host         : RAICHU running 64-bit major release  (build 9200)
+| Command      : report_drc -file top_drc_routed.rpt -pb top_drc_routed.pb
+| Design       : top
+| Device       : xc7a35tcpg236-1
+| Speed File   : -1
+------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 2
+
+2. REPORT DETAILS
+-----------------
+PDRC-153#1 Warning
+Gated clock check  
+Net my_background/clktest_reg is a gated clock net sourced by a combinational pin my_background/counter[7]_i_2/O, cell my_background/counter[7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PLHOLDVIO-2#1 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT my_background/counter[7]_i_2 is driving clock pin of 18 cells. This could lead to large hold time violations. First few involved cells are:
+    main_cnc/anim_clock/clktest_reg {FDRE}
+    main_cnc/anim_clock/counter_reg[0] {FDRE}
+    main_cnc/anim_clock/counter_reg[1] {FDRE}
+    main_cnc/anim_clock/counter_reg[2] {FDRE}
+    main_cnc/anim_clock/counter_reg[3] {FDRE}
+
+Related violations: <none>
+
+

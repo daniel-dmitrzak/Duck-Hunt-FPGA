@@ -1,0 +1,875 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Sun Jul 02 21:55:35 2017
+# Process ID: 11244
+# Current directory: C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/vivado/Duck_Hunt.runs/synth_1
+# Command line: vivado.exe -log top.vds -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/vivado/Duck_Hunt.runs/synth_1/top.vds
+# Journal file: C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/vivado/Duck_Hunt.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace
+Command: synth_design -top top -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 896 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 305.809 ; gain = 98.992
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/src/top.v:13]
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "TRUE" *) [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/src/top.v:37]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/src/top.v:37]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/vivado/Duck_Hunt.runs/synth_1/.Xil/Vivado-11244-RAICHU/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0' (1#1) [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/vivado/Duck_Hunt.runs/synth_1/.Xil/Vivado-11244-RAICHU/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-638] synthesizing module 'debounce' [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/src/list_ch06_02_debounce.v:2]
+	Parameter zero bound to: 2'b00 
+	Parameter wait0 bound to: 2'b01 
+	Parameter one bound to: 2'b10 
+	Parameter wait1 bound to: 2'b11 
+	Parameter N bound to: 21 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/src/list_ch06_02_debounce.v:43]
+INFO: [Synth 8-256] done synthesizing module 'debounce' (2#1) [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/src/list_ch06_02_debounce.v:2]
+INFO: [Synth 8-638] synthesizing module 'vga_timing' [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/src/vga_timing.v:14]
+INFO: [Synth 8-256] done synthesizing module 'vga_timing' (3#1) [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/src/vga_timing.v:14]
+INFO: [Synth 8-638] synthesizing module 'draw_background' [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/src/draw_background.v:23]
+INFO: [Synth 8-256] done synthesizing module 'draw_background' (4#1) [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/src/draw_background.v:23]
+INFO: [Synth 8-638] synthesizing module 'duck_cnc' [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/src/duck_cnc.v:25]
+INFO: [Synth 8-638] synthesizing module 'sync_gen' [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/src/sync_gen.v:24]
+	Parameter START bound to: 601 - type: integer 
+	Parameter END bound to: 605 - type: integer 
+	Parameter WIDTH bound to: 11 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'sync_gen' (5#1) [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/src/sync_gen.v:24]
+INFO: [Synth 8-638] synthesizing module 'frame_clock' [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/src/anim_clock_gen.v:6]
+INFO: [Synth 8-256] done synthesizing module 'frame_clock' (6#1) [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/src/anim_clock_gen.v:6]
+INFO: [Synth 8-638] synthesizing module 'duck_ctl' [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/src/duck_ctl.v:7]
+	Parameter DIR_UP bound to: 3'b000 
+	Parameter DIR_RUP bound to: 3'b001 
+	Parameter DIR_LUP bound to: 3'b010 
+	Parameter DIR_RIGHT bound to: 3'b011 
+	Parameter DIR_LEFT bound to: 3'b100 
+	Parameter SHOT bound to: 3'b101 
+	Parameter FALLING bound to: 3'b110 
+	Parameter VER_SPEED bound to: 10 - type: integer 
+	Parameter HOR_SPEED bound to: 20 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'lfsr_updown' [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/src/rng.v:5]
+	Parameter BITS bound to: 3 - type: integer 
+	Parameter MIN bound to: 0 - type: integer 
+	Parameter MAX bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'lfsr_updown' (7#1) [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/src/rng.v:5]
+INFO: [Synth 8-256] done synthesizing module 'duck_ctl' (8#1) [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/src/duck_ctl.v:7]
+INFO: [Synth 8-638] synthesizing module 'draw_sprite' [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/src/draw_sprite.v:24]
+	Parameter WIDTH bound to: 64 - type: integer 
+	Parameter HEIGHT bound to: 64 - type: integer 
+	Parameter ALPHA bound to: 12'b000000001001 
+	Parameter TRANSPARENCY bound to: 1 - type: integer 
+	Parameter SCALE_X bound to: 2 - type: integer 
+	Parameter SCALE_Y bound to: 2 - type: integer 
+	Parameter FILE bound to: sprites_128x128.jpg.data - type: string 
+	Parameter ADDR_WIDTH_X bound to: 7 - type: integer 
+	Parameter ADDR_WIDTH_Y bound to: 7 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'draw_rect' [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/src/draw_rect.v:25]
+	Parameter WIDTH bound to: 64 - type: integer 
+	Parameter HEIGHT bound to: 64 - type: integer 
+	Parameter ALPHA bound to: 12'b000000001001 
+	Parameter TRANSPARENCY bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH_X bound to: 5 - type: integer 
+	Parameter ADDR_WIDTH_Y bound to: 5 - type: integer 
+	Parameter SCALE_X bound to: 2 - type: integer 
+	Parameter SCALE_Y bound to: 2 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'delayup' [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/src/delay_upel.v:3]
+	Parameter WIDTH bound to: 35 - type: integer 
+	Parameter CLK_DEL bound to: 3 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'delayup' (9#1) [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/src/delay_upel.v:3]
+INFO: [Synth 8-256] done synthesizing module 'draw_rect' (10#1) [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/src/draw_rect.v:25]
+INFO: [Synth 8-638] synthesizing module 'image_rom' [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/src/image_rom.v:7]
+	Parameter FILE bound to: sprites_128x128.jpg.data - type: string 
+	Parameter SIZEX bound to: 128 - type: integer 
+	Parameter SIZEY bound to: 128 - type: integer 
+	Parameter ADDR_WIDTH_X bound to: 7 - type: integer 
+	Parameter ADDR_WIDTH_Y bound to: 7 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'sprites_128x128.jpg.data' is read successfully [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/src/image_rom.v:24]
+INFO: [Synth 8-256] done synthesizing module 'image_rom' (11#1) [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/src/image_rom.v:7]
+INFO: [Synth 8-256] done synthesizing module 'draw_sprite' (12#1) [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/src/draw_sprite.v:24]
+INFO: [Synth 8-256] done synthesizing module 'duck_cnc' (13#1) [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/src/duck_cnc.v:25]
+INFO: [Synth 8-638] synthesizing module 'draw_image' [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/src/draw_image.v:4]
+	Parameter WIDTH bound to: 256 - type: integer 
+	Parameter HEIGHT bound to: 256 - type: integer 
+	Parameter ALPHA bound to: 12'b000000001001 
+	Parameter TRANSPARENCY bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH_X bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH_Y bound to: 8 - type: integer 
+	Parameter SCALE_X bound to: 1 - type: integer 
+	Parameter SCALE_Y bound to: 1 - type: integer 
+	Parameter XPOS bound to: 50 - type: integer 
+	Parameter YPOS bound to: 160 - type: integer 
+	Parameter FILE bound to: tree_256x256.jpg.data - type: string 
+	Parameter FILE_X bound to: 256 - type: integer 
+	Parameter FILE_Y bound to: 256 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'draw_rect__parameterized0' [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/src/draw_rect.v:25]
+	Parameter WIDTH bound to: 256 - type: integer 
+	Parameter HEIGHT bound to: 256 - type: integer 
+	Parameter ALPHA bound to: 12'b000000001001 
+	Parameter TRANSPARENCY bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH_X bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH_Y bound to: 8 - type: integer 
+	Parameter SCALE_X bound to: 1 - type: integer 
+	Parameter SCALE_Y bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'draw_rect__parameterized0' (13#1) [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/src/draw_rect.v:25]
+INFO: [Synth 8-638] synthesizing module 'image_rom__parameterized0' [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/src/image_rom.v:7]
+	Parameter FILE bound to: tree_256x256.jpg.data - type: string 
+	Parameter SIZEX bound to: 256 - type: integer 
+	Parameter SIZEY bound to: 256 - type: integer 
+	Parameter ADDR_WIDTH_X bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH_Y bound to: 8 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'tree_256x256.jpg.data' is read successfully [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/src/image_rom.v:24]
+INFO: [Synth 8-256] done synthesizing module 'image_rom__parameterized0' (13#1) [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/src/image_rom.v:7]
+INFO: [Synth 8-256] done synthesizing module 'draw_image' (14#1) [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/src/draw_image.v:4]
+INFO: [Synth 8-638] synthesizing module 'draw_image__parameterized0' [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/src/draw_image.v:4]
+	Parameter WIDTH bound to: 128 - type: integer 
+	Parameter HEIGHT bound to: 128 - type: integer 
+	Parameter ALPHA bound to: 12'b000000001001 
+	Parameter TRANSPARENCY bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH_X bound to: 7 - type: integer 
+	Parameter ADDR_WIDTH_Y bound to: 7 - type: integer 
+	Parameter SCALE_X bound to: 1 - type: integer 
+	Parameter SCALE_Y bound to: 1 - type: integer 
+	Parameter XPOS bound to: 670 - type: integer 
+	Parameter YPOS bound to: 300 - type: integer 
+	Parameter FILE bound to: bush_128x128.jpg.data - type: string 
+	Parameter FILE_X bound to: 128 - type: integer 
+	Parameter FILE_Y bound to: 128 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'draw_rect__parameterized1' [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/src/draw_rect.v:25]
+	Parameter WIDTH bound to: 128 - type: integer 
+	Parameter HEIGHT bound to: 128 - type: integer 
+	Parameter ALPHA bound to: 12'b000000001001 
+	Parameter TRANSPARENCY bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH_X bound to: 7 - type: integer 
+	Parameter ADDR_WIDTH_Y bound to: 7 - type: integer 
+	Parameter SCALE_X bound to: 1 - type: integer 
+	Parameter SCALE_Y bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'draw_rect__parameterized1' (14#1) [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/src/draw_rect.v:25]
+INFO: [Synth 8-638] synthesizing module 'image_rom__parameterized1' [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/src/image_rom.v:7]
+	Parameter FILE bound to: bush_128x128.jpg.data - type: string 
+	Parameter SIZEX bound to: 128 - type: integer 
+	Parameter SIZEY bound to: 128 - type: integer 
+	Parameter ADDR_WIDTH_X bound to: 7 - type: integer 
+	Parameter ADDR_WIDTH_Y bound to: 7 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'bush_128x128.jpg.data' is read successfully [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/src/image_rom.v:24]
+INFO: [Synth 8-256] done synthesizing module 'image_rom__parameterized1' (14#1) [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/src/image_rom.v:7]
+INFO: [Synth 8-256] done synthesizing module 'draw_image__parameterized0' (14#1) [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/src/draw_image.v:4]
+INFO: [Synth 8-638] synthesizing module 'draw_image__parameterized1' [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/src/draw_image.v:4]
+	Parameter WIDTH bound to: 800 - type: integer 
+	Parameter HEIGHT bound to: 256 - type: integer 
+	Parameter ALPHA bound to: 12'b000000001001 
+	Parameter TRANSPARENCY bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH_X bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH_Y bound to: 7 - type: integer 
+	Parameter SCALE_X bound to: 2 - type: integer 
+	Parameter SCALE_Y bound to: 2 - type: integer 
+	Parameter XPOS bound to: 0 - type: integer 
+	Parameter YPOS bound to: 400 - type: integer 
+	Parameter FILE bound to: foreground_256x128.jpg.data - type: string 
+	Parameter FILE_X bound to: 256 - type: integer 
+	Parameter FILE_Y bound to: 128 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'draw_rect__parameterized2' [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/src/draw_rect.v:25]
+	Parameter WIDTH bound to: 800 - type: integer 
+	Parameter HEIGHT bound to: 256 - type: integer 
+	Parameter ALPHA bound to: 12'b000000001001 
+	Parameter TRANSPARENCY bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH_X bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH_Y bound to: 7 - type: integer 
+	Parameter SCALE_X bound to: 2 - type: integer 
+	Parameter SCALE_Y bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'draw_rect__parameterized2' (14#1) [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/src/draw_rect.v:25]
+INFO: [Synth 8-638] synthesizing module 'image_rom__parameterized2' [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/src/image_rom.v:7]
+	Parameter FILE bound to: foreground_256x128.jpg.data - type: string 
+	Parameter SIZEX bound to: 256 - type: integer 
+	Parameter SIZEY bound to: 128 - type: integer 
+	Parameter ADDR_WIDTH_X bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH_Y bound to: 7 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'foreground_256x128.jpg.data' is read successfully [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/src/image_rom.v:24]
+INFO: [Synth 8-256] done synthesizing module 'image_rom__parameterized2' (14#1) [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/src/image_rom.v:7]
+INFO: [Synth 8-256] done synthesizing module 'draw_image__parameterized1' (14#1) [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/src/draw_image.v:4]
+INFO: [Synth 8-638] synthesizing module 'blanker' [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/src/blanker.v:27]
+	Parameter BOX_WIDTH bound to: 64 - type: integer 
+	Parameter BOX_HEIGHT bound to: 64 - type: integer 
+	Parameter IDLE bound to: 2'b00 
+	Parameter WAIT bound to: 2'b01 
+	Parameter BLANK bound to: 2'b10 
+	Parameter READ bound to: 2'b11 
+INFO: [Synth 8-226] default block is never used [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/src/blanker.v:81]
+INFO: [Synth 8-256] done synthesizing module 'blanker' (15#1) [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/src/blanker.v:27]
+INFO: [Synth 8-638] synthesizing module 'sync_and_blank' [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/src/sync_and_blank.v:24]
+INFO: [Synth 8-638] synthesizing module 'sync_gen__parameterized0' [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/src/sync_gen.v:24]
+	Parameter START bound to: 840 - type: integer 
+	Parameter END bound to: 968 - type: integer 
+	Parameter WIDTH bound to: 11 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'sync_gen__parameterized0' (15#1) [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/src/sync_gen.v:24]
+INFO: [Synth 8-638] synthesizing module 'sync_gen__parameterized1' [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/src/sync_gen.v:24]
+	Parameter START bound to: 600 - type: integer 
+	Parameter END bound to: 627 - type: integer 
+	Parameter WIDTH bound to: 11 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'sync_gen__parameterized1' (15#1) [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/src/sync_gen.v:24]
+INFO: [Synth 8-638] synthesizing module 'sync_gen__parameterized2' [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/src/sync_gen.v:24]
+	Parameter START bound to: 800 - type: integer 
+	Parameter END bound to: 1055 - type: integer 
+	Parameter WIDTH bound to: 11 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'sync_gen__parameterized2' (15#1) [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/src/sync_gen.v:24]
+INFO: [Synth 8-256] done synthesizing module 'sync_and_blank' (16#1) [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/src/sync_and_blank.v:24]
+INFO: [Synth 8-256] done synthesizing module 'top' (17#1) [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/src/top.v:13]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 422.469 ; gain = 215.652
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 422.469 ; gain = 215.652
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/vivado/Duck_Hunt.runs/synth_1/.Xil/Vivado-11244-RAICHU/dcp/clk_wiz_0_in_context.xdc] for cell 'my_clk_ctrl'
+Finished Parsing XDC File [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/vivado/Duck_Hunt.runs/synth_1/.Xil/Vivado-11244-RAICHU/dcp/clk_wiz_0_in_context.xdc] for cell 'my_clk_ctrl'
+Parsing XDC File [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/src/vga_example.xdc]
+Finished Parsing XDC File [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/src/vga_example.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/src/vga_example.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 704.043 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 704.043 ; gain = 497.227
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 704.043 ; gain = 497.227
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  {C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/vivado/Duck_Hunt.runs/synth_1/.Xil/Vivado-11244-RAICHU/dcp/clk_wiz_0_in_context.xdc}, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  {C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/vivado/Duck_Hunt.runs/synth_1/.Xil/Vivado-11244-RAICHU/dcp/clk_wiz_0_in_context.xdc}, line 4).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 704.043 ; gain = 497.227
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "db_tick" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "aclk_nxt" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 704.043 ; gain = 497.227
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 4     
+	   2 Input     21 Bit       Adders := 1     
+	   3 Input     13 Bit       Adders := 10    
+	   2 Input     11 Bit       Adders := 6     
+	   2 Input      9 Bit       Adders := 2     
+	   3 Input      8 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
+	   3 Input      7 Bit       Adders := 2     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 1     
++---XORs : 
+	                8 Bit    Wide XORs := 2     
++---Registers : 
+	               35 Bit    Registers := 12    
+	               21 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	               15 Bit    Registers := 1     
+	               14 Bit    Registers := 1     
+	               12 Bit    Registers := 12    
+	               11 Bit    Registers := 16    
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 3     
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 8     
++---ROMs : 
+	                              ROMs := 4     
++---Muxes : 
+	   4 Input     21 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 8     
+	   4 Input     12 Bit        Muxes := 1     
+	   8 Input     11 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      7 Bit        Muxes := 2     
+	   4 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 2     
+	   8 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 12    
+	   7 Input      2 Bit        Muxes := 2     
+	   8 Input      2 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 8     
+	   8 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module debounce 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     21 Bit       Adders := 1     
++---Registers : 
+	               21 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     21 Bit        Muxes := 1     
+	   7 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+Module vga_timing 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
++---Registers : 
+	               12 Bit    Registers := 1     
+	               11 Bit    Registers := 2     
+Module draw_background 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 1     
+	               11 Bit    Registers := 2     
+Module frame_clock 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module lfsr_updown 
+Detailed RTL Component Info : 
++---XORs : 
+	                8 Bit    Wide XORs := 2     
++---Registers : 
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module duck_ctl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 4     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   8 Input     11 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 3     
+	   8 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 12    
+	   8 Input      2 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 4     
+Module delayup 
+Detailed RTL Component Info : 
++---Registers : 
+	               35 Bit    Registers := 3     
+Module draw_rect 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 2     
+	   3 Input     13 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 1     
+	               11 Bit    Registers := 2     
+	               10 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 1     
+Module image_rom 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module draw_rect__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     13 Bit       Adders := 2     
+	   3 Input      8 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
+	               11 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 1     
+Module image_rom__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module draw_rect__parameterized1 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     13 Bit       Adders := 2     
+	   3 Input      7 Bit       Adders := 2     
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	               14 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
+	               11 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 2     
+	   2 Input      7 Bit        Muxes := 1     
+Module image_rom__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module draw_rect__parameterized2 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 2     
+	   3 Input     13 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               15 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
+	               11 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      7 Bit        Muxes := 1     
+Module image_rom__parameterized2 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module blanker 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     13 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 1     
+	               11 Bit    Registers := 2     
+	                6 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   4 Input     12 Bit        Muxes := 1     
+	   4 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 2     
+	   7 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 3     
+Module sync_and_blank 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 704.043 ; gain = 497.227
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "db_tick" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "anim_clock/aclk_nxt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state_clock/aclk_nxt" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:58 ; elapsed = 00:01:04 . Memory (MB): peak = 704.043 ; gain = 497.227
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:58 ; elapsed = 00:01:04 . Memory (MB): peak = 704.043 ; gain = 497.227
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+-----------------------------------+---------------+----------------+
+|Module Name | RTL Object                        | Depth x Width | Implemented As | 
++------------+-----------------------------------+---------------+----------------+
+|image_rom   | rgb_reg                           | 16384x12      | Block RAM      | 
+|image_rom   | rgb_reg                           | 65536x12      | Block RAM      | 
+|image_rom   | rgb_reg                           | 16384x12      | Block RAM      | 
+|image_rom   | rgb_reg                           | 32768x12      | Block RAM      | 
+|duck_cnc    | duck1_sprite/my_image_rom/rgb_reg | 16384x12      | Block RAM      | 
+|draw_image  | draw_image_rect/pixel_addr_reg    | 65536x12      | Block RAM      | 
+|draw_image  | draw_image_rect/pixel_addr_reg    | 16384x12      | Block RAM      | 
+|draw_image  | draw_image_rect/pixel_addr_reg    | 32768x12      | Block RAM      | 
++------------+-----------------------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'my_background/rgb_out_reg[0]' (FDS) to 'my_background/rgb_out_reg[8]'
+INFO: [Synth 8-3886] merging instance 'my_background/rgb_out_reg[1]' (FDR) to 'my_background/rgb_out_reg[11]'
+INFO: [Synth 8-3886] merging instance 'my_background/rgb_out_reg[2]' (FDS) to 'my_background/rgb_out_reg[8]'
+INFO: [Synth 8-3886] merging instance 'my_background/rgb_out_reg[3]' (FDR) to 'my_background/rgb_out_reg[11]'
+INFO: [Synth 8-3886] merging instance 'my_background/rgb_out_reg[4]' (FDS) to 'my_background/rgb_out_reg[8]'
+INFO: [Synth 8-3886] merging instance 'my_background/rgb_out_reg[5]' (FDS) to 'my_background/rgb_out_reg[8]'
+INFO: [Synth 8-3886] merging instance 'my_background/rgb_out_reg[6]' (FDR) to 'my_background/rgb_out_reg[11]'
+INFO: [Synth 8-3886] merging instance 'my_background/rgb_out_reg[7]' (FDR) to 'my_background/rgb_out_reg[11]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\my_background/rgb_out_reg[8] )
+INFO: [Synth 8-3886] merging instance 'my_background/rgb_out_reg[9]' (FDR) to 'my_background/rgb_out_reg[11]'
+INFO: [Synth 8-3886] merging instance 'my_background/rgb_out_reg[10]' (FDR) to 'my_background/rgb_out_reg[11]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_background/rgb_out_reg[11] )
+INFO: [Synth 8-3886] merging instance 'main_cnc/duck1_sprite/draw_image/vbDelay/del_mem_reg[0][22]' (FD) to 'main_cnc/duck1_sprite/draw_image/vbDelay/del_mem_reg[0][30]'
+INFO: [Synth 8-3886] merging instance 'main_cnc/duck1_sprite/draw_image/vbDelay/del_mem_reg[0][23]' (FD) to 'main_cnc/duck1_sprite/draw_image/vbDelay/del_mem_reg[0][33]'
+INFO: [Synth 8-3886] merging instance 'main_cnc/duck1_sprite/draw_image/vbDelay/del_mem_reg[0][24]' (FD) to 'main_cnc/duck1_sprite/draw_image/vbDelay/del_mem_reg[0][30]'
+INFO: [Synth 8-3886] merging instance 'main_cnc/duck1_sprite/draw_image/vbDelay/del_mem_reg[0][25]' (FD) to 'main_cnc/duck1_sprite/draw_image/vbDelay/del_mem_reg[0][33]'
+INFO: [Synth 8-3886] merging instance 'main_cnc/duck1_sprite/draw_image/vbDelay/del_mem_reg[0][26]' (FD) to 'main_cnc/duck1_sprite/draw_image/vbDelay/del_mem_reg[0][30]'
+INFO: [Synth 8-3886] merging instance 'main_cnc/duck1_sprite/draw_image/vbDelay/del_mem_reg[0][27]' (FD) to 'main_cnc/duck1_sprite/draw_image/vbDelay/del_mem_reg[0][30]'
+INFO: [Synth 8-3886] merging instance 'main_cnc/duck1_sprite/draw_image/vbDelay/del_mem_reg[0][28]' (FD) to 'main_cnc/duck1_sprite/draw_image/vbDelay/del_mem_reg[0][33]'
+INFO: [Synth 8-3886] merging instance 'main_cnc/duck1_sprite/draw_image/vbDelay/del_mem_reg[0][29]' (FD) to 'main_cnc/duck1_sprite/draw_image/vbDelay/del_mem_reg[0][33]'
+INFO: [Synth 8-3886] merging instance 'main_cnc/duck1_sprite/draw_image/vbDelay/del_mem_reg[0][31]' (FD) to 'main_cnc/duck1_sprite/draw_image/vbDelay/del_mem_reg[0][33]'
+INFO: [Synth 8-3886] merging instance 'main_cnc/duck1_sprite/draw_image/vbDelay/del_mem_reg[0][32]' (FD) to 'main_cnc/duck1_sprite/draw_image/vbDelay/del_mem_reg[0][33]'
+INFO: [Synth 8-3886] merging instance 'main_cnc/duck1_sprite/draw_image/vbDelay/delay_stage[1].del_mem_reg[1][22]' (FD) to 'main_cnc/duck1_sprite/draw_image/vbDelay/delay_stage[1].del_mem_reg[1][27]'
+INFO: [Synth 8-3886] merging instance 'main_cnc/duck1_sprite/draw_image/vbDelay/delay_stage[1].del_mem_reg[1][23]' (FD) to 'main_cnc/duck1_sprite/draw_image/vbDelay/delay_stage[1].del_mem_reg[1][32]'
+INFO: [Synth 8-3886] merging instance 'main_cnc/duck1_sprite/draw_image/vbDelay/delay_stage[1].del_mem_reg[1][24]' (FD) to 'main_cnc/duck1_sprite/draw_image/vbDelay/delay_stage[1].del_mem_reg[1][27]'
+INFO: [Synth 8-3886] merging instance 'main_cnc/duck1_sprite/draw_image/vbDelay/delay_stage[1].del_mem_reg[1][25]' (FD) to 'main_cnc/duck1_sprite/draw_image/vbDelay/delay_stage[1].del_mem_reg[1][32]'
+INFO: [Synth 8-3886] merging instance 'main_cnc/duck1_sprite/draw_image/vbDelay/delay_stage[1].del_mem_reg[1][26]' (FD) to 'main_cnc/duck1_sprite/draw_image/vbDelay/delay_stage[1].del_mem_reg[1][27]'
+INFO: [Synth 8-3886] merging instance 'main_cnc/duck1_sprite/draw_image/vbDelay/delay_stage[1].del_mem_reg[1][27]' (FD) to 'main_cnc/duck1_sprite/draw_image/vbDelay/delay_stage[1].del_mem_reg[1][30]'
+INFO: [Synth 8-3886] merging instance 'main_cnc/duck1_sprite/draw_image/vbDelay/delay_stage[1].del_mem_reg[1][28]' (FD) to 'main_cnc/duck1_sprite/draw_image/vbDelay/delay_stage[1].del_mem_reg[1][32]'
+INFO: [Synth 8-3886] merging instance 'main_cnc/duck1_sprite/draw_image/vbDelay/delay_stage[1].del_mem_reg[1][29]' (FD) to 'main_cnc/duck1_sprite/draw_image/vbDelay/delay_stage[1].del_mem_reg[1][32]'
+INFO: [Synth 8-3886] merging instance 'main_cnc/duck1_sprite/draw_image/vbDelay/delay_stage[1].del_mem_reg[1][31]' (FD) to 'main_cnc/duck1_sprite/draw_image/vbDelay/delay_stage[1].del_mem_reg[1][32]'
+INFO: [Synth 8-3886] merging instance 'main_cnc/duck1_sprite/draw_image/vbDelay/delay_stage[1].del_mem_reg[1][32]' (FD) to 'main_cnc/duck1_sprite/draw_image/vbDelay/delay_stage[1].del_mem_reg[1][33]'
+INFO: [Synth 8-3886] merging instance 'main_cnc/duck1_sprite/draw_image/vbDelay/delay_stage[2].del_mem_reg[2][22]' (FD) to 'main_cnc/duck1_sprite/draw_image/vbDelay/delay_stage[2].del_mem_reg[2][27]'
+INFO: [Synth 8-3886] merging instance 'main_cnc/duck1_sprite/draw_image/vbDelay/delay_stage[2].del_mem_reg[2][23]' (FD) to 'main_cnc/duck1_sprite/draw_image/vbDelay/delay_stage[2].del_mem_reg[2][32]'
+INFO: [Synth 8-3886] merging instance 'main_cnc/duck1_sprite/draw_image/vbDelay/delay_stage[2].del_mem_reg[2][24]' (FD) to 'main_cnc/duck1_sprite/draw_image/vbDelay/delay_stage[2].del_mem_reg[2][27]'
+INFO: [Synth 8-3886] merging instance 'main_cnc/duck1_sprite/draw_image/vbDelay/delay_stage[2].del_mem_reg[2][25]' (FD) to 'main_cnc/duck1_sprite/draw_image/vbDelay/delay_stage[2].del_mem_reg[2][32]'
+INFO: [Synth 8-3886] merging instance 'main_cnc/duck1_sprite/draw_image/vbDelay/delay_stage[2].del_mem_reg[2][26]' (FD) to 'main_cnc/duck1_sprite/draw_image/vbDelay/delay_stage[2].del_mem_reg[2][27]'
+INFO: [Synth 8-3886] merging instance 'main_cnc/duck1_sprite/draw_image/vbDelay/delay_stage[2].del_mem_reg[2][27]' (FD) to 'main_cnc/duck1_sprite/draw_image/vbDelay/delay_stage[2].del_mem_reg[2][30]'
+INFO: [Synth 8-3886] merging instance 'main_cnc/duck1_sprite/draw_image/vbDelay/delay_stage[2].del_mem_reg[2][28]' (FD) to 'main_cnc/duck1_sprite/draw_image/vbDelay/delay_stage[2].del_mem_reg[2][32]'
+INFO: [Synth 8-3886] merging instance 'main_cnc/duck1_sprite/draw_image/vbDelay/delay_stage[2].del_mem_reg[2][29]' (FD) to 'main_cnc/duck1_sprite/draw_image/vbDelay/delay_stage[2].del_mem_reg[2][32]'
+INFO: [Synth 8-3886] merging instance 'main_cnc/duck1_sprite/draw_image/vbDelay/delay_stage[2].del_mem_reg[2][31]' (FD) to 'main_cnc/duck1_sprite/draw_image/vbDelay/delay_stage[2].del_mem_reg[2][32]'
+INFO: [Synth 8-3886] merging instance 'main_cnc/duck1_sprite/draw_image/vbDelay/delay_stage[2].del_mem_reg[2][32]' (FD) to 'main_cnc/duck1_sprite/draw_image/vbDelay/delay_stage[2].del_mem_reg[2][33]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\main_cnc/duck1_sprite/draw_image/vbDelay/del_mem_reg[0][30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\main_cnc/duck1_sprite/draw_image/vbDelay/del_mem_reg[0][33] )
+INFO: [Synth 8-3886] merging instance 'main_cnc/duck1_sprite/draw_image/vbDelay/delay_stage[1].del_mem_reg[1][30]' (FD) to 'main_cnc/duck1_sprite/draw_image/vbDelay/del_mem_reg[0][30]'
+INFO: [Synth 8-3886] merging instance 'main_cnc/duck1_sprite/draw_image/vbDelay/delay_stage[1].del_mem_reg[1][33]' (FD) to 'main_cnc/duck1_sprite/draw_image/vbDelay/del_mem_reg[0][33]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\main_cnc/duck1_sprite/draw_image/vbDelay/del_mem_reg[0][30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\main_cnc/duck1_sprite/draw_image/vbDelay/del_mem_reg[0][33] )
+INFO: [Synth 8-3886] merging instance 'main_cnc/duck1_sprite/draw_image/vbDelay/delay_stage[2].del_mem_reg[2][30]' (FD) to 'main_cnc/duck1_sprite/draw_image/vbDelay/del_mem_reg[0][30]'
+INFO: [Synth 8-3886] merging instance 'main_cnc/duck1_sprite/draw_image/vbDelay/delay_stage[2].del_mem_reg[2][33]' (FD) to 'main_cnc/duck1_sprite/draw_image/vbDelay/del_mem_reg[0][33]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\main_cnc/duck1_sprite/draw_image/vbDelay/del_mem_reg[0][30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\main_cnc/duck1_sprite/draw_image/vbDelay/del_mem_reg[0][33] )
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:01:01 ; elapsed = 00:01:07 . Memory (MB): peak = 704.043 ; gain = 497.227
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:01:01 ; elapsed = 00:01:07 . Memory (MB): peak = 704.043 ; gain = 497.227
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'my_clk_ctrl/clk_out1' to pin 'my_clk_ctrl/bbstub_clk_out1/O'
+INFO: [Synth 8-5820] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:14 ; elapsed = 00:01:20 . Memory (MB): peak = 759.867 ; gain = 553.051
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'gun_blanker/blnk_count_reg[5]' (FDRE) to 'gun_blanker/blnk_count_reg[4]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gun_blanker/blnk_count_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\main_cnc/duck1_ctl/shot_count_reg[4] )
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:16 ; elapsed = 00:01:22 . Memory (MB): peak = 786.859 ; gain = 580.043
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance main_cnc/duck1_sprite/my_image_rom/rgb_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance main_cnc/duck1_sprite/my_image_rom/rgb_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance main_cnc/duck1_sprite/my_image_rom/rgb_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance main_cnc/duck1_sprite/my_image_rom/rgb_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance main_cnc/duck1_sprite/my_image_rom/rgb_reg_4 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance main_cnc/duck1_sprite/my_image_rom/rgb_reg_5 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:17 ; elapsed = 00:01:24 . Memory (MB): peak = 804.430 ; gain = 597.613
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:01:17 ; elapsed = 00:01:24 . Memory (MB): peak = 804.430 ; gain = 597.613
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:01:17 ; elapsed = 00:01:24 . Memory (MB): peak = 804.430 ; gain = 597.613
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5365] Flop trigger_db/q_reg_reg[20] is being inverted and renamed to trigger_db/q_reg_reg[20]_inv.
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:18 ; elapsed = 00:01:25 . Memory (MB): peak = 804.430 ; gain = 597.613
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:18 ; elapsed = 00:01:25 . Memory (MB): peak = 804.430 ; gain = 597.613
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:18 ; elapsed = 00:01:25 . Memory (MB): peak = 804.430 ; gain = 597.613
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:18 ; elapsed = 00:01:25 . Memory (MB): peak = 804.430 ; gain = 597.613
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:18 ; elapsed = 00:01:25 . Memory (MB): peak = 804.430 ; gain = 597.613
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:18 ; elapsed = 00:01:25 . Memory (MB): peak = 804.430 ; gain = 597.613
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+----------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                                                             | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+----------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|top         | main_cnc/duck1_sprite/draw_image/hcount_out_reg[10]                  | 4      | 11    | NO           | NO                 | YES               | 11     | 0       | 
+|top         | main_cnc/duck1_sprite/draw_image/vcount_out_reg[10]                  | 4      | 11    | NO           | NO                 | YES               | 11     | 0       | 
+|top         | main_cnc/duck1_ctl/flight/count_reg[1]                               | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|top         | tree/draw_image_rect/vbDelay/delay_stage[2].del_mem_reg[2][33]       | 3      | 6     | NO           | NO                 | YES               | 6      | 0       | 
+|top         | tree/draw_image_rect/vbDelay/delay_stage[2].del_mem_reg[2][30]       | 4      | 6     | NO           | NO                 | YES               | 6      | 0       | 
+|top         | tree/draw_image_rect/hcount_out_reg[10]                              | 4      | 11    | NO           | NO                 | YES               | 11     | 0       | 
+|top         | tree/draw_image_rect/vcount_out_reg[10]                              | 4      | 11    | NO           | NO                 | YES               | 11     | 0       | 
+|top         | bush/draw_image_rect/vbDelay/delay_stage[2].del_mem_reg[2][33]       | 4      | 12    | NO           | NO                 | YES               | 12     | 0       | 
+|top         | bush/draw_image_rect/hcount_out_reg[10]                              | 4      | 10    | NO           | NO                 | YES               | 10     | 0       | 
+|top         | bush/draw_image_rect/vcount_out_reg[10]                              | 4      | 10    | NO           | NO                 | YES               | 10     | 0       | 
+|top         | foreground/draw_image_rect/vbDelay/delay_stage[2].del_mem_reg[2][33] | 4      | 12    | NO           | NO                 | YES               | 12     | 0       | 
+|top         | foreground/draw_image_rect/hcount_out_reg[10]                        | 4      | 10    | NO           | NO                 | YES               | 10     | 0       | 
+|top         | foreground/draw_image_rect/hcount_out_reg[0]                         | 8      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|top         | foreground/draw_image_rect/vcount_out_reg[10]                        | 4      | 10    | NO           | NO                 | YES               | 10     | 0       | 
+|top         | foreground/draw_image_rect/vcount_out_reg[0]                         | 8      | 1     | NO           | NO                 | YES               | 1      | 0       | 
++------------+----------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_wiz_0     |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+------------+------+
+|      |Cell        |Count |
++------+------------+------+
+|1     |clk_wiz_0   |     1|
+|2     |BUFG        |     1|
+|3     |CARRY4      |    74|
+|4     |LUT1        |    36|
+|5     |LUT2        |   168|
+|6     |LUT3        |   117|
+|7     |LUT4        |   162|
+|8     |LUT5        |    67|
+|9     |LUT6        |   101|
+|10    |RAMB36E1    |     1|
+|11    |RAMB36E1_1  |     1|
+|12    |RAMB36E1_10 |     2|
+|13    |RAMB36E1_11 |     2|
+|14    |RAMB36E1_12 |     1|
+|15    |RAMB36E1_13 |     1|
+|16    |RAMB36E1_14 |     1|
+|17    |RAMB36E1_15 |     1|
+|18    |RAMB36E1_16 |     1|
+|19    |RAMB36E1_17 |     1|
+|20    |RAMB36E1_18 |     2|
+|21    |RAMB36E1_19 |     2|
+|22    |RAMB36E1_2  |     1|
+|23    |RAMB36E1_20 |     1|
+|24    |RAMB36E1_21 |     1|
+|25    |RAMB36E1_22 |     1|
+|26    |RAMB36E1_23 |     1|
+|27    |RAMB36E1_24 |     1|
+|28    |RAMB36E1_25 |     1|
+|29    |RAMB36E1_26 |     1|
+|30    |RAMB36E1_27 |     3|
+|31    |RAMB36E1_28 |     1|
+|32    |RAMB36E1_29 |     1|
+|33    |RAMB36E1_3  |     1|
+|34    |RAMB36E1_30 |     1|
+|35    |RAMB36E1_31 |     1|
+|36    |RAMB36E1_32 |     1|
+|37    |RAMB36E1_33 |     1|
+|38    |RAMB36E1_34 |     2|
+|39    |RAMB36E1_4  |     1|
+|40    |RAMB36E1_5  |     1|
+|41    |RAMB36E1_6  |     2|
+|42    |RAMB36E1_7  |     2|
+|43    |RAMB36E1_8  |     3|
+|44    |RAMB36E1_9  |     3|
+|45    |SRL16E      |   123|
+|46    |FDCE        |     1|
+|47    |FDPE        |     2|
+|48    |FDRE        |   306|
+|49    |FDSE        |    19|
+|50    |IBUF        |    15|
+|51    |OBUF        |    23|
+|52    |OBUFT       |     7|
++------+------------+------+
+
+Report Instance Areas: 
++------+--------------------+---------------------------+------+
+|      |Instance            |Module                     |Cells |
++------+--------------------+---------------------------+------+
+|1     |top                 |                           |  1271|
+|2     |  finish_signals    |sync_and_blank             |    14|
+|3     |  bush              |draw_image__parameterized0 |   106|
+|4     |    draw_image_rect |draw_rect__parameterized1  |   106|
+|5     |      vbDelay       |delayup_3                  |    62|
+|6     |  foreground        |draw_image__parameterized1 |   151|
+|7     |    draw_image_rect |draw_rect__parameterized2  |   151|
+|8     |      vbDelay       |delayup_2                  |    60|
+|9     |  gun_blanker       |blanker                    |    88|
+|10    |  main_cnc          |duck_cnc                   |   468|
+|11    |    anim_clock      |frame_clock                |    93|
+|12    |    duck1_ctl       |duck_ctl                   |   158|
+|13    |      flight        |lfsr_updown                |    12|
+|14    |    duck1_sprite    |draw_sprite                |   108|
+|15    |      draw_image    |draw_rect                  |    92|
+|16    |        vbDelay     |delayup_1                  |    22|
+|17    |      my_image_rom  |image_rom                  |    16|
+|18    |    state_clock     |frame_clock_0              |   109|
+|19    |  my_background     |draw_background            |    76|
+|20    |  my_timing         |vga_timing                 |    52|
+|21    |  tree              |draw_image                 |   129|
+|22    |    draw_image_rect |draw_rect__parameterized0  |   129|
+|23    |      vbDelay       |delayup                    |    64|
+|24    |  trigger_db        |debounce                   |    80|
++------+--------------------+---------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:18 ; elapsed = 00:01:25 . Memory (MB): peak = 804.430 ; gain = 597.613
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 95 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:04 ; elapsed = 00:01:14 . Memory (MB): peak = 804.430 ; gain = 284.363
+Synthesis Optimization Complete : Time (s): cpu = 00:01:18 ; elapsed = 00:01:25 . Memory (MB): peak = 804.430 ; gain = 597.613
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 137 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+145 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:18 ; elapsed = 00:01:24 . Memory (MB): peak = 804.430 ; gain = 573.391
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 804.430 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sun Jul 02 21:57:03 2017...

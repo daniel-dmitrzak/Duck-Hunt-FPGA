@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Fri Jun 30 22:46:15 2017
+# Process ID: 3728
+# Current directory: C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/Duck_Hunt
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10020 C:\Users\Kiteu\OneDrive\UEC\Duck Hunt\Duck_Hunt\Duck_Hunt.xpr
+# Log file: C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/Duck_Hunt/vivado.log
+# Journal file: C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/Duck_Hunt\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/Duck_Hunt/Duck_Hunt.xpr}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+archive_project {C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/Duck_Hunt.xpr.zip} -temp_dir {C:/Users/Kiteu/OneDrive/UEC/Duck Hunt/Duck_Hunt/.Xil/Vivado-3728-RAICHU} -force -exclude_run_results
